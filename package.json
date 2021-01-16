@@ -1,6 +1,13 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "dev": "lerna run dev",
+    "tag": "lerna version",
+    "publish": "lerna publish"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }

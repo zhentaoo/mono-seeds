@@ -1,0 +1,131 @@
+/* pages/detail/index.wxss */
+/*评论 */
+.discuss {
+  padding: 30rpx;
+  background: #f7f7f7;
+}
+.discuss-item {
+  padding: 10px 0px;
+  border-bottom: 2px solid white;
+  overflow: hidden;
+}
+.discuss-item:last-child {
+  border-bottom: none;
+}
+.discuss-item-img {
+  float: left;
+  border: 1px solid #d1d2d3; 
+  display: inline-block;
+  width: 30px;
+  border-radius: 5px;
+  height: 30px;
+  margin-right: 15px;
+  position:relative;
+  top:7px;
+}
+
+.discuss-item-right {
+  float: left;
+  width: calc(100% - 50px)
+}
+
+.discuss-item-name {
+  display: inline-block;
+  color: gray;
+  font-size: 15px;
+}
+
+.discuss-item-content {
+  display: inline-block;
+  color: black;
+  font-size: 16px;
+}
+
+
+/*评论结束  */
+
+/*头部  */
+.duanzi-owner {
+  display: flex;
+  align-items: center; 
+}
+
+.duanzi-owner-img {
+  border: 1px solid #d1d2d3; 
+  display: inline-block;
+  width: 30px;
+  border-radius: 5px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.duanzi-owner-name {
+  display: inline-block;
+  color: gray;
+  font-size: 17px;
+}
+/*头部结束  */
+
+/*底部  */
+.duanzi-bottom {
+  overflow: hidden;
+  align-items: center; 
+  margin-top: 20px;
+  margin-bottom: 15px; 
+}
+.duanzi-bottom-tag {
+  font-size: 15px;
+  height: 21px;
+  float: left;
+  color: gray;
+  position: relative;
+  top: -19px;
+  display: inline-block;
+}
+.duanzi-bottom-left {
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+
+.duanzi-bottom-right {
+  float: right;
+  width: 21px;
+  height: 21px;  
+  margin-right: 15px;
+}
+/*底部结束  */
+
+
+/*主体  */
+.duanzi-card {
+  padding: 30rpx;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  background: white; 
+  margin-bottom: 9px; 
+}
+
+.duanzi-card-img {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.duanzi-card-title {
+  color: #d0481d;
+  display: inline-block; 
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.duanzi-card-content {
+  margin-top: -7px;  
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: normal;
+  display: block;
+}
+/*主体结束  */

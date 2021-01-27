@@ -1,0 +1,99 @@
+<view class='duanzi'>
+    <view class='tmp'></view>
+    <button 
+      wx-if="{{!userInfo}}"
+      open-type="getUserInfo" 
+      class='cus-login'
+      bindgetuserinfo="getUserInfo">
+      爆
+    </button>
+    
+     <button 
+      wx-if="{{userInfo}}"
+      class='cus-login'
+      bindtap="talk"
+      >
+      蛤
+    </button>
+    <!-- <button open-type="getUserInfo" class='cus-login'>爆</button> -->
+    <!-- <button ></button>  -->
+    <view 
+      wx:for="{{data}}" 
+      class='duanzi-card'
+      data-detail="{{item}}"
+      >
+        <view class="duanzi-owner">
+          <image class='duanzi-owner-img' src="{{item.avatar}}"></image>
+          <text class='duanzi-owner-name'>{{item.authorName}}</text> 
+        </view>
+
+        <view>
+          <text 
+            class='duanzi-card-content'
+            data-item="{{item}}"
+            bindtap="dianzan">
+            {{item.content || item.title}}
+          </text>
+          
+          <image 
+            catchtap
+            bindload="imgloaded"
+            bindtap="preview"
+            data-imgurl="{{item.cdn_img_url}}" 
+            mode="aspectFit" 
+            class='duanzi-card-img' 
+            src="{{item.cdn_img_url}}"
+            wx:if="{{(!!item.cdn_img_url)}}"
+            >
+          </image>
+        </view>
+       
+        <view class='duanzi-bottom' 
+          data-item="{{item}}"
+          bindtap="dianzan">
+          <image class='duanzi-bottom-left' src='../../imgs/biaoqian.svg'></image>
+          <text class='duanzi-bottom-tag'>
+          {{item.from}}
+          </text>
+          
+          <image      
+            wx-if='{{!item.clicked}}'
+            class='duanzi-bottom-right'
+            src='../../imgs/zan-gray.svg'
+            >
+          </image>
+          <image      
+            wx-if='{{item.clicked}}'
+            class='duanzi-bottom-right'
+            src='../../imgs/zan-red.svg'
+            >
+          </image>
+
+          <image 
+            wx-if="{{item.discuss}}" 
+            class='duanzi-bottom-right'  
+            style = "margin-right: 10px"        src='../../imgs/pinglun-gray.svg'></image>
+        </view>  
+
+        <!--评论  -->
+        <view class='discuss'>
+          <view
+            class='discuss-item'  
+            wx-if="{{item.discuss}}"  
+            wx:for="{{item.discuss}}" 
+            wx:for-index="idx" 
+            wx:for-item="dzItem">
+            <image 
+              class='.discuss-item-img' 
+              src="{{dzItem.avatar}}">
+            </image>
+            <view class='.discuss-item-right'>
+              <view class='.discuss-item-content'>
+                {{dzItem.content}}
+              </view>
+            </view>
+          </view>
+        </view>
+
+    </view>
+</view>

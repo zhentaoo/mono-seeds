@@ -1,0 +1,63 @@
+<view class='duanzi'>
+  <!--段子主体  -->
+  <view class='duanzi-card'>
+    <view class="duanzi-owner">
+      <image class='duanzi-owner-img' src="{{item.avatar}}">
+      </image>
+      <text class='duanzi-owner-name'>{{item.authorName}}</text>
+    </view>
+
+    <view>
+      <text class='duanzi-card-content'>
+            {{item.content || item.title}}
+          </text>
+
+      <image bindload="imgloaded" bindtap="preview" data-imgurl="{{item.cdn_img_url}}" mode="aspectFit" class='duanzi-card-img' src="{{item.cdn_img_url}}" wx:if="{{(!!item.cdn_img_url)}}">
+      </image>
+    </view>
+
+    <view class='duanzi-bottom'>
+      <image class='duanzi-bottom-left' src='../../imgs/biaoqian.svg'></image>
+
+      <text class='duanzi-bottom-tag'>
+          {{item.from}}
+          </text>
+
+      <image class='duanzi-bottom-right' src='../../imgs/zan-gray.svg'></image>
+
+      <image class='duanzi-bottom-right' src='../../imgs/pinglun-gray.svg'></image>
+    </view>
+
+  </view>
+
+  <!--评论  -->
+  <view class='discuss'>
+    <view 
+      class='discuss-item' 
+      style='font-size: 14px;color: gray' 
+      wx-if="{{!discuss}}">
+      还没有评论哦~~
+    </view>
+
+    <view
+      class='discuss-item'  
+      wx-if="{{discuss}}"  
+      wx:for="{{discuss}}" 
+      wx:for-index="idx" 
+      wx:for-item="dzItem">
+      <image 
+        class='.discuss-item-img' 
+        src="{{dzItem.avatar}}">
+      </image>
+      <view class='.discuss-item-right'>
+        <view class='.discuss-item-name'>
+          {{dzItem.authorName}}
+        </view>
+        <view class='.discuss-item-content'>
+          {{dzItem.content}}
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

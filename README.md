@@ -6,20 +6,19 @@
 - MidwayJS【基于EggJS的上层node框架】：https://midwayjs.org/midway/guide.html#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B
 
 
-# Lerna： monorepo管理
-## 基础命令
+## Packages：子应用说明
+- fe-main：qiankun框架主应用
+- fe-reactnative：reactnative、expo框架
+- fe-vue：vuejs + qiankun子应用
+- node-midway：midwayjs框架
+- server-config：mongo、pm2、nginx等配置
+
+## Lerna基础命令
 - lerna init：新建monorepo
 - lerna bootstrap：安装所有子应用依赖
 - lerna create [subapp]：新建子应用
-## packages
-- fe-main（qiankun）
-- fe-reactnative
-- fe-vue（vuejs + qiankun子应用）
-- node-midway（midwayjs）
-- server-config（mongo、pm2、nginx 配置）
 
-# Qiankun： 微前端方案
-## 使用示例：
+## Qiankun： 微前端方案 使用示例
 1. 分别运行主子应用，主应用在8080端口、子应用在8081端口
 ![](./doc/2021-01-27-14-30-53.png)
 

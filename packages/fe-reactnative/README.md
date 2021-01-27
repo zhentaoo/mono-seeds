@@ -1,7 +1,8 @@
 ## Expo+ReactNative学习（IOS版）
 
 ### 官方文档：https://expo.io/learn (node10+)
-- sudo npm install --global expo-cli
+- sudo npm install --global expo-cli(不可用)
+- sudo yarn global add expo-cli
 - expo init my-new-project
 - cd my-new-project
 - expo start

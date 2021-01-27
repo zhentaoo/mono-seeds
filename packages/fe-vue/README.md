@@ -1,4 +1,4 @@
-# fe-web
+# fe-vue
 
 ## Project setup
 ```

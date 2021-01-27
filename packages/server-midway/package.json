@@ -1,5 +1,5 @@
 {
-  "name": "server-auto",
+  "name": "server-midway",
   "version": "0.0.1",
   "description": "{{description}}",
   "private": true,
@@ -24,8 +24,8 @@
     "node": ">=10.16.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=midway-server-server-auto --framework=midway --ts",
-    "stop": "egg-scripts stop --title=midway-server-server-auto",
+    "start": "egg-scripts start --daemon --title=midway-server-server-midway --framework=midway --ts",
+    "stop": "egg-scripts stop --title=midway-server-server-midway",
     "start_build": "npm run build && cross-env NODE_ENV=development midway-bin dev",
     "clean": "midway-bin clean",
     "dev": "cross-env NODE_ENV=local midway-bin dev --ts",

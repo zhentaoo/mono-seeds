@@ -1,4 +1,4 @@
-# server-auto
+# server-midway
 
 {{description}}
 

@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "qiankun": "^2.3.6"
   }
 }

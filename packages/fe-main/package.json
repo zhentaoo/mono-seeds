@@ -1,36 +1,43 @@
 {
   "name": "fe-main",
-  "version": "0.0.1",
-  "description": "qiankun微前端应用",
-  "keywords": [
-    "qiankun",
-    "javascript"
-  ],
-  "author": "zhentaoo <18516697699@163.com>",
-  "homepage": "https://github.com/zhentaoo/mono-repo#readme",
-  "license": "ISC",
-  "main": "lib/fe-main.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "registry": "http://npm.devops.xiaohongshu.com:7001"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhentaoo/mono-repo.git"
-  },
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/zhentaoo/mono-repo/issues"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "qiankun": "^2.3.6"
-  }
+    "core-js": "^3.6.5",
+    "qiankun": "^2.3.6",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }

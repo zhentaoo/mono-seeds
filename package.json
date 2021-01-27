@@ -4,7 +4,7 @@
   "scripts": {
     "clean": "lerna clean",
     "bootstrap": "lerna bootstrap",
-    "dev": "lerna run dev",
+    "dev": "lerna run dev --parallel",
     "tag": "lerna version",
     "publish": "lerna publish"
   },

@@ -1,0 +1,59 @@
+.body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.ttui-cc {
+  width: 100%;
+  background: linear-gradient(#f9783a, #f7dda4b3);
+  height: 100vh;
+}
+.heart{
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: -10px;
+}
+
+.heart-center {
+  position: absolute;
+  top: 105px;
+  text-align: center;
+  font-size: 37px;
+  width: 100%;
+  color: #ff5252;
+  font-weight: bold;
+}
+
+.heart-center-sm {
+  position: relative;
+  right: 2px;
+  font-size: 17px;
+  color: gray;
+}
+
+.content {
+  margin: 0px 20px;
+  padding: 40px 25px;
+  color: gray;
+  background: #ffeded;
+  border-radius: 3px;
+  line-height: 40px;
+}
+image {
+  width: 200px;
+  height: 200px;
+}
+
+.ttui-submit-btn {
+  margin: 20px 20px;
+  /* padding: 10px; */
+}
+
+.content-header {
+  font-size: 26px;
+  text-align: center;
+  color: black;
+}

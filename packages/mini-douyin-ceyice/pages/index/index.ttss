@@ -1,0 +1,51 @@
+form{
+    width: 100%;
+}
+
+.body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.ttui-input {
+  text-align: center;
+  border: 1px solid rgb(255, 153, 153);
+  margin: 15px 20px;
+  padding: 7px;
+}
+
+.ttui-submit-btn {
+  margin: 30px 20px;
+  /* padding: 10px; */
+}
+
+.ttui-header {
+  text-align: center;
+  font-size: 27px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+  font-weight: bold;
+  color: orangered
+}
+
+.ttui-sm-header {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+}
+
+
+.ttui-cc {
+  /* margin-top: 100px; */
+  /* border: 1px solid red; */
+}
+
+.main-img {
+  width: 100%;
+  height: 220px;
+}

@@ -1,0 +1,26 @@
+<view class="container">
+	<view class="ttui-cc">
+    <view class="heart">
+      <image src="https://s1.ax1x.com/2020/06/09/t5MOUS.png" mode="" />
+      <view class="heart-center">
+        <view>{{ num }}%</view>
+        <view class="heart-center-sm">缘分值</view>
+      </view>
+    </view>
+
+    <view class="content">
+      <view class="content-header">
+        {{ yourname }} 和 {{ itname }}
+      </view>
+      <view>
+        <!-- 两情相知久长时，不羡暮暮与朝朝
+        注解：红颜知己之缘，不能夫妻也可以成为朋友 -->
+        {{data}}
+      </view>
+    </view>
+    
+    <view class="">
+      <button class="ttui-submit-btn" bindtap="jump" type="primary">点击测试下一个</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="container">
+	<view class="ttui-cc">
+		<form catchsubmit="formSubmit">
+      <view>
+        <image class="main-img" src="https://ae01.alicdn.com/kf/H24551a59930e4de2a69618e52b89c6bfZ.jpg" mode="" />
+      </view>
+
+      <view class="ttui-header">        
+        缘分契合度预测
+        <view class="ttui-sm-header">
+          从你们的名字测算姻缘值
+        </view>
+      </view>
+
+			<view class="page-section">
+				<view class="ttui-cells input-block">
+          <input class="ttui-input" name="yourname" placeholder="点击输入你的名字" />
+        </view>
+
+        <view class="ttui-cells input-block">
+          <input class="ttui-input" name="itname" placeholder="点击输入ta的名字" />
+        </view>
+      </view>
+      
+      <view class="page-section page-section-space button-block">
+        <button class="ttui-submit-btn" type="primary" formType="submit">看1个广告免费测试</button>
+      </view>
+    </form>
+  </view>
+</view>

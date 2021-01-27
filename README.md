@@ -1,6 +1,6 @@
 # 使用mono-repo实践各技术框架
 ## 实践技术概览
-- Lerna【monorepo管理方案】：https://github.com/lerna/lerna
+- Lerna【monorepo解决方案】：https://github.com/lerna/lerna
 - Qiankun【微前端解决方案】：https://qiankun.umijs.org/zh/guide/getting-started
 - VueJS【广泛使用的前端框架】：https://cn.vuejs.org/v2/guide/
 - MidwayJS【基于EggJS的上层node框架】：https://midwayjs.org/midway/guide.html#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B

@@ -7,6 +7,7 @@
 
 
 ## Packages：子应用说明
+- fe-electron: electorn 客户端应用
 - fe-main：qiankun框架主应用
 - fe-reactnative：reactnative、expo框架
 - fe-vue：vuejs + qiankun子应用
@@ -14,6 +15,8 @@
 - server-config：mongo、pm2、nginx等配置
 - mini-douyin-ceyice：抖音小程序demo
 - mini-wechat-baoquduanzi：微信小程序demo
+
+
 ## Lerna基础命令
 - lerna init：新建monorepo
 - lerna bootstrap：安装所有子应用依赖

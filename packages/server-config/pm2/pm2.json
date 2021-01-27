@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "exec_mode": "fork",
+      "exec_interpreter": "bash",
+      "instances": 1,
+      "name": "mongodb",
+      "script": "/Users/zhentaoo/Code/nginx-conf/mongo_start.sh"
+    }, {
+      "name": "test",
+      "script": "/Users/zhentaoo/Code/nginx-conf/test.js",
+      "instances": 1,
+      "exec_mode": "cluster"
+    }
+  ]
+}

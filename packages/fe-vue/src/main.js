@@ -3,10 +3,15 @@ import App from "./App.vue";
 
 Vue.config.productionTip = false;
 
-if (!window._IS_MICRO) {
+function createApp () {
   new Vue({
     render: (h) => h(App),
-  }).$mount("#sub-app");
+  }).$mount("#app");
+}
+
+if (!window._IS_MICRO) {
+  console.log("window._IS_MICRO", window._IS_MICRO);
+  createApp()
 }
 
 /**
@@ -15,6 +20,7 @@ if (!window._IS_MICRO) {
  */
 export async function bootstrap() {
   console.log("fe-vue app bootstraped");
+  console.log("window._IS_MICRO", window._IS_MICRO);
 }
 /**
  * 应用每次进入都会调用 mount 方法，通常我们在这里触发应用的渲染方法
@@ -22,9 +28,7 @@ export async function bootstrap() {
 export async function mount(props) {
   console.log(props);
   console.log("fe-vue app mount");
-  new Vue({
-    render: (h) => h(App),
-  }).$mount("#sub-app");
+  createApp();
 }
 /**
  * 应用每次 切出/卸载 会调用的方法，通常在这里我们会卸载微应用的应用实例

@@ -41,4 +41,7 @@ html body {
   width: 250px;
   background: #e2e2e2;
 }
+#sub-app {
+  overflow: auto;
+}
 </style>

@@ -1,9 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import { registerMicroApps, start } from "qiankun";
 
 createApp(App).mount("#root-app");
-
-import { registerMicroApps, start } from "qiankun";
 
 registerMicroApps([
   {

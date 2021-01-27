@@ -8,7 +8,7 @@
 
 ## Packages：子应用说明
 - fe-electron: electorn 客户端应用
-- fe-main：qiankun框架主应用
+- fe-qiankun：qiankun框架主应用
 - fe-reactnative：reactnative、expo框架
 - fe-vue：vuejs + qiankun子应用
 - node-midway：midwayjs框架
@@ -23,7 +23,7 @@
 - lerna create [subapp]：新建子应用
 
 ## Qiankun： 微前端方案 使用示例
-1. 分别运行主子应用，主应用在8080端口、子应用在8081端口
+1. 分别运行主应用(fe-qiankun)8080端口、子应用(fe-vue)8081端口
 ![](./doc/2021-01-27-14-30-53.png)
 
 2. 独立运行的子应用

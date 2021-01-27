@@ -7,7 +7,8 @@
 
 
 ## Packages：子应用说明
-- fe-electron: electorn 客户端应用
+- ai-ml5js: 前端深度学习框架，在浏览器运行的AI
+- fe-electron: electorn 客户端应用开发
 - fe-qiankun：qiankun框架主应用
 - fe-reactnative：reactnative、expo框架
 - fe-vue：vuejs + qiankun子应用

@@ -1,0 +1,30 @@
+{
+  "name": "AI-Browser",
+  "version": "1.0.0",
+  "description": "前端使用ml5.js，在浏览器中跑图片识别模型 - 图片识别模型使用ML5预置的MobileNet - 项目主要展示了和ml5库的基础使用 和 几个demo图片的识别效果 - ML5文档：https://ml5js.org/",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhentaoo/AI-Browser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhentaoo/AI-Browser/issues"
+  },
+  "homepage": "https://github.com/zhentaoo/AI-Browser#readme",
+  "devDependencies": {
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "design-magic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-di": "node DI/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhentaoo/design-magic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhentaoo/design-magic/issues"
+  },
+  "homepage": "https://github.com/zhentaoo/design-magic#readme",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}

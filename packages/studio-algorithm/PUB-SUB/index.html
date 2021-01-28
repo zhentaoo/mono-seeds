@@ -1,0 +1,58 @@
+<script>
+var events = (function(){
+  var topics = {};
+
+  return {
+    getTopics :function () {
+      console.log(topics);
+    },
+    subscribe: function(topic, listener) {
+      // Create the topic's object if not yet created
+      if(!topics[topic]) {
+          topics[topic] = { queue: [] };
+      }
+
+      // Add the listener to queue
+      var index = topics[topic].queue.push(listener) -1;
+
+      // Provide handle back for removal of topic
+      return (function(topic, index) {
+        return {
+          remove: function() {
+            delete topics[topic].queue[index];
+          }
+        }
+      })(topic, index);
+    },
+    publish: function(topic, info) {
+      // If the topic doesn't exist, or there's no listeners in queue, just leave
+      if(!topics[topic] || !topics[topic].queue.length) return;
+
+      // Cycle through topics queue, fire!
+      var items = topics[topic].queue;
+      items.forEach(function(item) {
+              item(info||{});
+      });
+    }
+  };
+})();
+
+var subscription1 = events.subscribe('load', function(obj) {
+    // Do something now that the event has occurred
+    console.log(obj);
+});
+
+var subscription2 = events.subscribe('load', function(obj) {
+    // Do something now that the event has occurred
+    console.log(111);
+});
+
+events.publish('load', {
+    url: '/some/url/path' // any argument
+});
+
+subscription1.remove();
+subscription2.remove();
+
+//先订阅，然后发布一个主题，通知所有订阅者
+</script>

@@ -1,0 +1,14 @@
+.basic {
+  width: 40%;
+  height: 100px;
+  float: left;
+  border: 1px solid red;
+}
+.test {
+  position: relative;
+  top: 30px;
+}
+.testB {
+  position: absolute;
+  top: 30px;
+}

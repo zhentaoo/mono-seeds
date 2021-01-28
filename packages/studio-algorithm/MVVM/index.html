@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>mvvm</title>
+  <script type="text/javascript" src="./mvvm.js"></script>
+  <script type="text/javascript" src="./form.js"></script>
+  <link rel="stylesheet" href="./index.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+  <div class="basic" id="vm">
+    vmvmvm
+  </div>
+  <div class="basic" style="margin-top:5%;margin-left:35%">
+    <form class="" name='aForm' onSubmit="return query()" id='aa' method="get">
+      <span>name:</span>
+      <input leo-model='name' name="name" oninput="inputing()" value="">
+      <br/>
+      <span>pwd:</span>
+      <input leo-model='pwd' name="pwd" value="">
+      <br/>
+      <button type="submit" name="button">sub</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

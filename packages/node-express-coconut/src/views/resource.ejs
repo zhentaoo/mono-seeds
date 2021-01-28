@@ -1,0 +1,41 @@
+<% include layout/header.ejs %>
+<% include layout/topbar %>
+
+<dl>
+  <dt>大前端技能图谱</dt>
+  <dd>
+    废话不多说，以下是我目前学习过的一些技能，大家可以过一下，
+    脑图对于梳理知识体系的帮助还是很大的，
+    如果看的不清楚可以把图片保存下来
+  </dd>
+</dl>
+<div class="feimg">
+  <img src="/img/bigfe.png" alt="大前端知识体系脑图" onclick="window.open('http://zhentaoo.com/img/bigfe.png')">
+</div>
+<% include layout/footer %>
+<style media="screen">
+  .feimg {
+    width: 100%;
+    min-height: 500px;
+    overflow: auto;
+  }
+
+  dt {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+  }
+  dt:first-child {
+    margin-top: 0px;
+  }
+  dd {
+    margin-bottom: 10px;
+    line-height: 25px;
+    text-indent: 30px;
+  }
+  .wechat-img {
+    height: 180px;
+    width: 180px;
+    margin-left: 10px;
+  }
+</style>

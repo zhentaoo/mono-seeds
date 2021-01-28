@@ -1,0 +1,49 @@
+<div class="cc-navbar">
+  <div class="in-navbar">
+      <ul class="">
+          <li id="about"><a href="/about" style="color: #9cffc5;font-size: 15px;">青菜叶子</a></li>
+          <li id="program"><a href="/program">随笔</a></li>
+          <li id="trans"><a href="/trans/pm2" style="">文译</a></li>
+          <li id="resource"><a href="/resource">技能图谱</a></li>
+      </ul>
+      <ul>
+        <a href="/chat" style="margin-right: 30px;font-size: 14px;position: relative;top: 2px;color: white;">在线聊天</a>
+        <wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button>
+      </ul>
+  </div>
+</div>
+
+<script type="text/javascript">
+if (location.pathname.indexOf('/program') != -1 || location.pathname == '/') {
+  document.querySelector('#program').className = 'header-active';
+} else if (location.pathname.indexOf('/trans') != -1) {
+  document.querySelector('#trans').className = 'header-active';
+} else if (location.pathname.indexOf('tools') != -1) {
+  document.querySelector('#tools').className = 'header-active';
+} else if (location.pathname.indexOf('resource') != -1) {
+  document.querySelector('#resource').className = 'header-active';
+}
+</script>
+
+<style media="screen">
+.title {
+
+}
+.WB_widgets {
+  padding: 7px 0 0 0;
+}
+.login_button_32 img{
+  height: 25px;
+  width: 28px;
+}
+.login_button_32 a {
+  color: white;
+  padding-left: 5px;
+}
+.loginout{
+  color: #d4d2d2 !important;
+}
+</style>
+
+<div class="cc-containers">
+  <div class="containers">

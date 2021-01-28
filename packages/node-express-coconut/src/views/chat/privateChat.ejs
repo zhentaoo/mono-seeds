@@ -1,0 +1,40 @@
+<% include ../layout/header %>
+<% include ../layout/topbar %>
+<div class="row">
+    <div class="col-lg-9">
+        <div class="block">
+            <h4>私人聊天室：<%= roomName %></h4>
+
+            <div class="privateChatContent" id="privateChatContent">
+            </div>
+
+            <form action="#" id="privateSay">
+                <div class="input-group">
+                    <% if(session.isAuth){ %>
+                    <input class="form-control" id="mySay">
+                    <% }else{ %>
+                    <input class="form-control" id="mySay" disabled="disabled">
+                    <% } %>
+                    <span class="input-group-btn">
+                        <% if(session.isAuth){ %>
+                        <button class="btn btn-default">发送</button>
+                        <% }else{ %>
+                        <button class="btn btn-default" disabled="disabled">发送</button>
+                        <% } %>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-3">
+
+        <div class="block">
+            <h4><%= roomName %></h4><h4>在线成员:</h4>
+
+            <h3 id="onlineNum">0</h3>
+        </div>
+    </div>
+</div>
+<% include ../layout/footer %>
+<script src="/TCP/client/clientOn.js"></script>
+<script src="/TCP/client/clientEmit.js"></script>

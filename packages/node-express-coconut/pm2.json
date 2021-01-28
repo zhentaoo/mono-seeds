@@ -1,0 +1,13 @@
+{
+  "apps": [{
+    "name": "coconut",
+    "script": "./app.js",
+    "max_memory_restart": "100M",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+
+    }
+  }]
+}

@@ -1,0 +1,172 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+/*footer*/
+.cc-footer {
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgba(64, 180, 199, 0.15);
+    padding-bottom: 50px;
+    min-height: 300px;
+}
+
+.footer {
+  width: 960px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  color: #6d6d6d;
+  font-size: 12px !important;
+}
+
+.footer-introduce {
+  width: 960px;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #6d6d6d;
+}
+
+.footer img {
+  width: 180px;
+  height: 180px;
+}
+
+/*footer end*/
+
+/*ad start*/
+.ad-item {
+  display: block;
+  width: 200px;
+  background-color: #14a3b9;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 12px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.ad-item:hover {
+  text-decoration:none
+}
+
+.ad-title {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+}
+/*ad end*/
+
+/*header start*/
+.cc-navbar {
+  color: white;
+  background-color: #14a3b9;
+  font-size: 15px;
+}
+
+.in-navbar {
+  display: flex;
+  width: 960px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.in-navbar > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.in-navbar > ul > li{
+  display:inline-block; /* 将链接设为块级元素 */
+  padding:8px 10px; /* 设置内边距 */
+  text-decoration:none; /* 去掉下划线 */
+  color: white;
+  margin-right: 10px;
+  box-sizing: border-box;
+  height: 38px;
+}
+
+.in-navbar > ul > li:first-child{
+  padding-left: 0;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.in-navbar > ul > li:first-child img{
+  height: 23px;
+  top : -1px;
+  left: 1px;
+  position: relative;
+  /*top: 2px;*/
+}
+
+.in-navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.in-navbar a:hover, .in-navbar a:focus{
+  text-decoration: none;
+  color: black;
+}
+
+.header-active {
+  background: rgb(67, 199, 216);
+  transition: 1s;
+}
+
+.header-active a {
+  color: white;
+  transition: 1s;
+}
+
+.header-active-a-margin-left a{
+  margin-left: 9px;
+}
+
+.cc-containers {
+  color: #6d6d6d;
+  min-height: 600px;
+}
+.containers {
+  margin: auto;
+  /*justify-content: space-between;
+  display: flex;*/
+  width: 960px;
+  min-height: 600px;
+  padding: 15px 0 40px 0 !important;
+}
+
+.container-left {
+  float: left;
+  width: 677px;
+  height: 100%;
+}
+
+.container-right {
+  float: right;
+  width: 225px;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .in-navbar {
+    width:  100%;
+  }
+
+  .containers {
+    width: 100%;
+  }
+
+  .cc-footer {
+    display: none;
+  }
+
+
+}

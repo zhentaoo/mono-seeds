@@ -1,0 +1,9 @@
+<h4>私聊</h4>
+<table class="table">
+    <% for(var k in roomList){ %>
+    <tr>
+        <td><a class="roomList"
+               href="/chat/privateChat?id=<%= roomList[k]['roomName'] %>"><%= roomList[k]['roomName'] %></a></td>
+    </tr>
+    <% } %>
+</table>

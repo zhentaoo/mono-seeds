@@ -1,0 +1,5 @@
+/.idea
+/modules
+/node_modules
+test.js
+src/config/admin.js

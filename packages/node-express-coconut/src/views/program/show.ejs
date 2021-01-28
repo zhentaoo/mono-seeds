@@ -1,0 +1,21 @@
+<% include ../layout/header.ejs %>
+<% include ../layout/topbar.ejs %>
+
+<div class="container-left">
+  <div class="oneProgramDiv">
+      <h5 class="title">
+          <%= one.title %>
+      </h5>
+      <div class="content">
+          <%- one.content %>
+      </div>
+      <br>
+      <br>
+  </div>
+</div>
+
+<div class="container-right">
+  <% include ./archive %>
+</div>
+
+<% include ../layout/footer %>

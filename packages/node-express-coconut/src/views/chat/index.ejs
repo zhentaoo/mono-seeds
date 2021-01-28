@@ -1,0 +1,31 @@
+<% include ../layout/header %>
+<% include ../layout/topbar %>
+
+<div class="container-left">
+  <% include plugins/publicChat.ejs %>
+</div>
+<div class="container-right">
+    <h4>在线人数</h4>
+    <h3 id="onlineNum">0</h3>
+</div>
+
+<% include ../layout/footer %>
+<script src="/app/chat/clientOn.js"></script>
+<script src="/app/chat/clientEmit.js"></script>
+<script>
+  window.loginName = '';
+  setTimeout(
+    function(){
+      if (document.querySelector('.login_a')) {
+        loginName = document.querySelector('.login_a').title;
+      }
+      if (loginName) {
+        document.querySelector('#sayBtn').removeAttribute('disabled');
+        document.querySelector('#publicSayContent').removeAttribute('disabled');
+        document.querySelector('#please_login').style.display = "none";
+      }
+    },
+    2000
+  );
+
+</script>

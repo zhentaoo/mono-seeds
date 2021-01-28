@@ -1,0 +1,39 @@
+<% include ../../layout/adminHeader.ejs %>
+<% include ../../nav/adminSidebar.ejs %>
+<% include ../../nav/adminTopbar.ejs %>
+
+<div class="content">
+    <a href="/admin/program/add">
+        <button class="btn btn-success">添加新的编程博文</button>
+    </a>
+
+    <br>
+    <br>
+    <h4>已有程序博文：</h4>
+    <table class="table table-hover">
+        <thead>
+        <th>博文</th>
+        <th>修改时间</th>
+        <th>操作</th>
+        </thead>
+        <% for(var i = 0;i < docs.length;i++){ %>
+        <tr>
+            <td><%= docs[i].title %></td>
+            <td><%= new Date(parseInt(docs[i].date.updateAt)).getFullYear()+"-"
+                +parseInt(new Date(parseInt(docs[i].date.updateAt)).getMonth()+1)+"-"
+                +new Date(parseInt(docs[i].date.updateAt)).getDate() %></td>
+            <td>
+                <a href="/admin/program/edit?_id=<%= docs[i]._id %>"><button class="btn btn-xs btn-info">修改</button></a>
+                |
+                <a onclick="del('<%=docs[i]._id %>')"><button class="btn btn-xs btn-danger">删除</button></a>
+            </td>
+        </tr>
+        <% } %>
+    </table>
+</div>
+<% include ../../layout/adminFooter.ejs %>
+<script>
+  function del(_id) {
+    location.href = "/admin/program/del?_id="+_id
+  }
+</script>

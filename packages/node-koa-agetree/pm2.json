@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "test",
+      "script": "/Users/zhentaoo/Code/nginx-conf/test.js",
+      "instances": 1,
+      "exec_mode": "cluster"
+    }
+  ]
+}

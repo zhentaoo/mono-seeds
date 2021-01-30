@@ -3,6 +3,9 @@
 ## 官方文档
 https://github.com/hizzgdev/jsmind/blob/master/docs/zh/1.usage.md
 
+## 官方DEMO
+http://hizzgdev.github.io/jsmind/example/2_features.html
+
 ## 使用方式
 参考 [indexhtml](./indexhtml) 内代码实现，还是比较简单的
 

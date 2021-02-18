@@ -12,6 +12,7 @@
 - fe-qiankun：qiankun框架主应用
 - fe-reactnative：reactnative、expo框架
 - fe-vue：vuejs + qiankun子应用
+- graph-mind: xmind图、脑图Demo
 - node-midway：midwayjs框架
 - server-config：mongo、pm2、nginx等配置
 - mini-douyin-ceyice：抖音小程序demo

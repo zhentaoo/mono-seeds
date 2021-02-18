@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* 想要菜单相对父组件显示需要在外层添加 position: relative; */
+      body, html {
+        padding: 0;
+        margin: 0;
+      }
+      .outer {
+        position: relative;
+        margin: 0px;
+      }
+      #map {
+        height: 100vh;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+    <div id="map"></div>
+    </div>
+    <script src="./sdk/regenerator-runtime"></script>
+    <script src="./sdk/mind-elixir.js"></script>
+  </body>
+  <script>
+    let mind = new MindElixir({
+      el: '#map',
+      direction: MindElixir.SIDE,
+      data: {
+        nodeData: {
+          id: 'root',
+          topic: 'Mind Elixir',
+          root: true,
+          children:[
+            {topic: 'xx', id:'xxx', direction: 1}
+          ]
+        },
+        linkData: {},
+      },
+      draggable: true,
+      contextMenu: true,
+      toolBar: true,
+      nodeMenu: true,
+      keypress: true,
+      undo: true,
+    })
+    
+    mind.init()
+    console.log('test E function', E('bd4313fbac40284b'))
+  </script>
+</html>
